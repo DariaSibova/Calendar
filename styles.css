@@ -108,3 +108,31 @@ html, body{
   background-color: #c0392b;
   border-radius: 50%;
 }
+
+.header-calendario:before{
+  left: 33px;
+}
+.header-calendario:after{
+  right: 33px;
+}
+.iron-calendar{
+  width: 44px;
+  height: 108px;
+  position: absolute;
+  z-index: 2;
+  top: -40px;
+  left: 43px;
+  background-color: #bdc3c7;
+  border-radius: 50px;
+}
+.iron-calendar:after{
+  content: "";
+  width: 44px;
+  height: 108px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -258px;
+  background-color: #bdc3c7;
+  border-radius: 50px;
+}
