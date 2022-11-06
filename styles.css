@@ -136,3 +136,46 @@ html, body{
   background-color: #bdc3c7;
   border-radius: 50px;
 }
+
+.leaf{
+  width: 100%;
+  height: 256px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+  background-color: #ecf0f1;
+  border-radius: 0 0 40px 40px;
+}
+.leaf:after{
+  content: "";
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 44px;    
+  left: 44px;
+  background-color: #bdc3c7;
+  box-shadow: #bdc3c7 61px 0 0, 
+        #bdc3c7 122px 0 0, 
+        #bdc3c7 183px 0 0, 
+        #bdc3c7 246px 0 0,
+        #bdc3c7 0px 61px 0, 
+        #bdc3c7 61px 61px 0, 
+        #bdc3c7 122px 61px 0, 
+        #bdc3c7 183px 61px 0,
+        #bdc3c7 246px 61px 0,
+        #bdc3c7 0px 122px 0, 
+        #bdc3c7 61px 122px 0, 
+        #bdc3c7 122px 122px 0, 
+        #bdc3c7 183px 122px 0,
+        #bdc3c7 246px 122px 0;
+}
+.leaf.leaf-efect {
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 9;
+    bottom: -70px;
+    left: -72px;
+    opacity: 0;
+  -webkit-animation: effectLeaf 2s linear infinite;
+}
